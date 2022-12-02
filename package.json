@@ -1,0 +1,25 @@
+{
+  "name": "intergalactic-3d-resume",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "homepage": "https://nrenner0211.github.io/intergalactic-3d-resume/",
+  "keywords": [
+    "three.js",
+    "3d-resume",
+    "vite"
+  ],
+  "scripts": {
+    "dev": "vite dist",
+    "deploy": "gh-pages -d dist",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^3.2.3"
+  },
+  "dependencies": {
+    "gh-pages": "^4.0.0",
+    "three": "^0.146.0"
+  }
+}
