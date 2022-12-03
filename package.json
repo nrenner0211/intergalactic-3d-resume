@@ -10,9 +10,9 @@
     "vite"
   ],
   "scripts": {
-    "dev": "vite docs",
-    "deploy": "gh-pages -d docs",
-    "build": "vite build docs",
+    "dev": "vite",
+    "deploy": "gh-pages -d dist",
+    "build": "vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
