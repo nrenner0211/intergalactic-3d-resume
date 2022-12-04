@@ -2,8 +2,10 @@ import './style.css';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
+// reload when window is resized
+
 window.onresize = () => {
-  document.reload();
+  location.reload();
 };
 
 // setup
