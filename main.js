@@ -2,6 +2,10 @@ import './style.css';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
+window.onresize = () => {
+  document.reload();
+};
+
 // setup
 
 const scene = new THREE.Scene();
@@ -64,12 +68,12 @@ Array(100).fill().forEach(addStar)
 
 // background
 
-const spaceTexture = new THREE.TextureLoader().load('/images/space.jpg');
+const spaceTexture = new THREE.TextureLoader().load('/space.jpg');
 scene.background = spaceTexture;
 
 // avatar
 
-const nikTexture = new THREE.TextureLoader().load('/images/nik.png');
+const nikTexture = new THREE.TextureLoader().load('/nik.png');
 const niki = new THREE.Mesh(
   new THREE.BoxGeometry(23,23,23),
   new THREE.MeshBasicMaterial({ map: nikTexture })
@@ -83,8 +87,8 @@ niki.position.z = -30;
 
 // moon
 
-const moonTexture = new THREE.TextureLoader().load('/images/moon.jpg');
-const normalTexture = new THREE.TextureLoader().load('/images/normal.jpg');
+const moonTexture = new THREE.TextureLoader().load('/moon.jpg');
+const normalTexture = new THREE.TextureLoader().load('/normal.jpg');
 
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(4,32,32),
@@ -101,7 +105,7 @@ moon.position.setY(10);
 
 // planet
 
-const planetTexture = new THREE.TextureLoader().load('/images/planet.jpg');
+const planetTexture = new THREE.TextureLoader().load('/planet.jpg');
 
 const planet = new THREE.Mesh(
   new THREE.SphereGeometry(8,36,36),
