@@ -1,8 +1,8 @@
-import { defineConfig } from 'vite';
+import { defineConfig } from "vite";
 
 export default defineConfig({
-    root: './',
+    base: "/glowing-space/",
     build: {
-        outDir: 'dist',
-    }
+        chunkSizeWarningLimit: 1000,
+    },
 });

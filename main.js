@@ -1,4 +1,4 @@
-import '/style.css';
+import './style.css';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
@@ -14,21 +14,21 @@ const renderer = new THREE.WebGLRenderer({
 
 renderer.setPixelRatio( window.devicePixelRatio );
 renderer.setSize( window.innerWidth, window.innerHeight );
-camera.position.setZ(10);
-camera.position.setX(10);
+
+camera.position.setY(1);
 
 renderer.render(scene, camera);
 
 // torus
 
-const geometry = new THREE.TorusGeometry( 15, 2, 20, 50 )
+const geometry = new THREE.TorusGeometry( 24, 2, 20, 50 )
 const material = new THREE.MeshStandardMaterial({ color: 0x5CC8FF }); 
 const torus = new THREE.Mesh( geometry, material );
 
 scene.add(torus)
 torus.position.x = -10;
+torus.position.y = 10;
 torus.position.z = -30;
-torus.position.setY(15);
 
 // lighting
 
@@ -41,9 +41,9 @@ scene.add(pointLight, ambientLight)
 
 // helpers
 
-const lightHelper = new THREE.PointLightHelper(pointLight)
-const gridHelper = new THREE.GridHelper(200, 50)
-scene.add(lightHelper, gridHelper)
+// const lightHelper = new THREE.PointLightHelper(pointLight)
+// const gridHelper = new THREE.GridHelper(200, 50)
+// scene.add(lightHelper, gridHelper)
 
 const controls = new OrbitControls(camera, renderer.domElement);
 
@@ -64,27 +64,27 @@ Array(100).fill().forEach(addStar)
 
 // background
 
-const spaceTexture = new THREE.TextureLoader().load('/space.jpg');
+const spaceTexture = new THREE.TextureLoader().load('/images/space.jpg');
 scene.background = spaceTexture;
 
 // avatar
 
-const nikTexture = new THREE.TextureLoader().load('/nik.jpg');
+const nikTexture = new THREE.TextureLoader().load('/images/nik.png');
 const niki = new THREE.Mesh(
-  new THREE.BoxGeometry(7,8,8),
+  new THREE.BoxGeometry(23,23,23),
   new THREE.MeshBasicMaterial({ map: nikTexture })
 );
 
 scene.add(niki);
 
 niki.position.x = -10;
+niki.position.y = 10;
 niki.position.z = -30;
-niki.position.setY(15);
 
 // moon
 
-const moonTexture = new THREE.TextureLoader().load('/moon.jpg');
-const normalTexture = new THREE.TextureLoader().load('/normal.jpg');
+const moonTexture = new THREE.TextureLoader().load('/images/moon.jpg');
+const normalTexture = new THREE.TextureLoader().load('/images/normal.jpg');
 
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(4,32,32),
@@ -95,15 +95,16 @@ const moon = new THREE.Mesh(
 )
 
 scene.add(moon);
+moon.position.x = -30;
 moon.position.z = 30;
-moon.position.setX(25);
+moon.position.setY(10);
 
 // planet
 
-const planetTexture = new THREE.TextureLoader().load('/planet.jpg');
+const planetTexture = new THREE.TextureLoader().load('/images/planet.jpg');
 
 const planet = new THREE.Mesh(
-  new THREE.SphereGeometry(4,32,32),
+  new THREE.SphereGeometry(8,36,36),
   new THREE.MeshStandardMaterial({
     map: planetTexture,
     normalMap: normalTexture
@@ -111,19 +112,20 @@ const planet = new THREE.Mesh(
 )
 
 scene.add(planet);
-planet.position.x = -10;
-planet.position.z = 30;
-planet.position.setY(5);
+planet.position.x = 25;
+planet.position.y = -5;
+planet.position.z = 10;
 
 // animate & view
 
 function moveCamera() {
   const t = document.body.getBoundingClientRect().top;
-  moon.rotation.y += 0.03;
-  moon.rotation.z += 0.04;
 
-  planet.rotation.x += 0.04;
-  planet.rotation.y += 0.03;
+  moon.rotation.y += 0.06;
+  moon.rotation.z += 0.004;
+
+  planet.rotation.y += 0.04;
+  planet.rotation.z += 0.001;
   
   camera.position.z = t * -0.001;
   camera.position.x = t * -0.01;
