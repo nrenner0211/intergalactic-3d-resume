@@ -2,9 +2,12 @@
 
 ## Table of Contents
 
-[About](#about)
-[Links](#links)
-[Contact](#contact)
+- [Intergalactic 3D Resume](#intergalactic-3d-resume)
+  - [Table of Contents](#table-of-contents)
+  - [About](#about)
+  - [Tech Stack](#tech-stack)
+  - [Links](#links)
+  - [Contact](#contact)
 
 ## About
 
@@ -21,10 +24,6 @@ Tired plain Jane resumés? I was too, so I made a 3D, space-themed resumé to ke
 [Repo](https://github.com/nrenner0211/intergalactic-3d-resume)
 
 [Deployed](https://nrenner0211.github.io/intergalactic-3d-resume/)
-
-## Deployment
-
-[Reference Video](https://www.youtube.com/watch?v=yo2bMGnIKE8)
 
 ## Contact
 

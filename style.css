@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Montserrat&display=swap');
 
 canvas {
-  /* background-image: url(/space.jpg); */
   position: fixed;
   top: 0;
   left: 0;
@@ -10,8 +9,8 @@ canvas {
 :root {
   --dark-bg: rgba(0, 16, 33, 0.75);
   --spacing: 25rem;
-  --light-bg: rgb(175, 162, 255, 0.75);
-  font-family: Inter, sans-serif;
+  --light-bg: rgb(102, 16, 242, 0.50);
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -54,9 +53,18 @@ main {
 }
 
 h1, h2, h3, blockquote {
-  font-family: elevon, sans-serif;
-  font-weight: 700;
+  font-family: 'Fira Sans', sans-serif;
   font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  color: #AAFFE5;
+}
+
+a:hover {
+  color: #5AFF15;
+  text-shadow: 2px 2px 8px #000;
 }
 
 section {
@@ -64,7 +72,16 @@ section {
   padding: 1rem;
   border-radius: 30px;
   background: var(--dark-bg);
-  font-size: 1.25rem;
+  font-size: 1.45rem;
   line-height: 1.5;
   margin-bottom: var(--spacing);
 }
+
+section p {
+  font-size: 1.25rem;
+}
+
+section:hover {
+  background: var(--light-bg);
+}
+
