@@ -8,13 +8,23 @@
 
 ## About
 
-This 3D space-themed resume was made with [Vite](https://vitejs.dev/) and [three.js](https://threejs.org/). I used [this](https://youtu.be/Q7AOvWpIVHU) tutorial to get started, and quickly took off on my own building more stuff with three.js. Super fun project!
+Tired plain Jane resumés? I was too, so I made a 3D, space-themed resumé to keep it fresh! I used [this](https://youtu.be/Q7AOvWpIVHU) tutorial to get started, and quickly took off on my own building more stuff with Three.js. Super fun project!
+
+## Tech Stack
+
+- [Vite](https://vitejs.dev/)
+
+- [Three.js](https://threejs.org/)
 
 ## Links
 
 [Repo](https://github.com/nrenner0211/intergalactic-3d-resume)
 
 [Deployed](https://nrenner0211.github.io/intergalactic-3d-resume/)
+
+## Deployment
+
+[Reference Video](https://www.youtube.com/watch?v=yo2bMGnIKE8)
 
 ## Contact
 
