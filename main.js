@@ -4,7 +4,7 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
 // images
 
-const nikUrl = new URL('/public/nik.png', import.meta.url).href
+const nikUrl = new URL('/public/logo.png', import.meta.url).href
 const spaceUrl = new URL('/public/space.jpg', import.meta.url).href
 const moonUrl = new URL('/public/moon.jpg', import.meta.url).href
 const normalUrl = new URL('/public/normal.jpg', import.meta.url).href
@@ -85,7 +85,7 @@ scene.background = spaceTexture;
 
 const nikTexture = new THREE.TextureLoader().load(nikUrl);
 const niki = new THREE.Mesh(
-  new THREE.BoxGeometry(23,23,23),
+  new THREE.BoxGeometry(25,25,25),
   new THREE.MeshBasicMaterial({ map: nikTexture })
 );
 

@@ -6,6 +6,10 @@
   - [Table of Contents](#table-of-contents)
   - [About](#about)
   - [Tech Stack](#tech-stack)
+  - [Installation](#installation)
+    - [Clone Repository](#clone-repository)
+    - [Install Dependencies](#install-dependencies)
+    - [Start Application](#start-application)
   - [Links](#links)
   - [Contact](#contact)
 
@@ -18,6 +22,20 @@ Tired plain Jane resumés? I was too, so I made a 3D, space-themed resumé to ke
 - [Vite](https://vitejs.dev/)
 
 - [Three.js](https://threejs.org/)
+
+## Installation
+
+### Clone Repository
+
+`git clone git@github.com:nrenner0211/intergalactic-3d-resume.git`
+
+### Install Dependencies
+
+All NPM packages required for this application are already listed as dependencies in the package.json file. Run the command `npm i` in your terminal at the root directory level to install the packages.
+
+### Start Application
+
+Run the command `npm start` in your terminal. You can then view the app on [localhost:3000](http://localhost:3000/)!
 
 ## Links
 
