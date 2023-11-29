@@ -15,7 +15,7 @@
 
 ## About
 
-Tired plain Jane resumés? I was too, so I made a 3D, space-themed resumé to keep it fresh! I used [this](https://youtu.be/Q7AOvWpIVHU) tutorial to get started, and quickly took off on my own building more stuff with Three.js. Super fun project!
+Tired plain Jane resumés? I was too, so I made a 3D resumé website to keep it fresh! This is my first project working with Three.js.
 
 ## Tech Stack
 
