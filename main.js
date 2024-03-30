@@ -18,22 +18,22 @@ window.onresize = () => {
 
 // SPACE NEWS API
 
-const url = 'https://spacenews.p.rapidapi.com/news';
-const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': 'b86080d624msh7e6ba0418b9cd81p1c6393jsnd9da0c5f71b8',
-		'X-RapidAPI-Host': 'spacenews.p.rapidapi.com'
-	}
-};
+// const url = 'https://spacenews.p.rapidapi.com/news';
+// const options = {
+// 	method: 'GET',
+// 	headers: {
+// 		'X-RapidAPI-Key': '',
+// 		'X-RapidAPI-Host': 'spacenews.p.rapidapi.com'
+// 	}
+// };
 
-try {
-	const response = await fetch(url, options);
-	const result = await response.text();
-	console.log(result);
-} catch (error) {
-	console.error(error);
-}
+// try {
+// 	const response = await fetch(url, options);
+// 	const result = await response.text();
+// 	console.log(result);
+// } catch (error) {
+// 	console.error(error);
+// }
 
 // setup
 
